@@ -639,90 +639,116 @@ nav ul li a:hover {
 }
 /* end skills */
 /* start website */
+
+.containerr {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .website {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #000;
-  height: 110vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.website h2 {
+
+.website .containerr h2 {
   font-size: 70px;
-  padding-bottom: 150px;
-  margin-top: 110px;
+  text-align: center;
 }
-.website div {
-  width: 250px;
-  height: 100px;
-  margin: 0 auto;
+
+.website_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  margin-top: 60px;
+  width: 100%;
+  gap: 40px;
+  padding: 0 15px;
+}
+
+.website_content > div {
+  width: 100%;
+  height: 360px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
-.website img {
-  width: 250px;
-  height: 250px;
+
+.website_content > div img {
   border-radius: 20px;
+  height: 360px;
 }
-.website div:first-of-type:before {
+
+.website_content > div::before {
   content: "";
-  width: 250px;
-  height: 100px;
-  background-color: #000;
+  width: 100%;
+  height: 40%;
+  background-color: rgb(0 0 0 / 70%);
   position: absolute;
   z-index: 1;
-  opacity: 0.4;
-  bottom: -71px;
-  border-radius: 0 0 10px 20px;
+  bottom: 0;
 }
-.website button {
-  font-size: 15px;
+
+.website_content > div a {
   background-color: #f9004d;
-  padding: 9px;
-  width: 80px;
-  text-align: center;
-  border-radius: 10px;
-  border: 2px solid #f9004d;
+  display: block;
+  width: fit-content;
+  padding: 15px 40px;
   position: absolute;
-  bottom: -60px;
-  z-index: 2;
-  transition: 0.7s;
-  font-size: 13px;
+  border-radius: 10px;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  border: 3px solid #f9004d;
+  transition: 0.3s;
 }
-.website button:hover {
+
+.website_content > div a:hover {
   background-color: #000;
+}
+
+.github {
+  width: 100%;
+  text-align: center;
+  margin: 60px 0;
 }
 
 .github a {
-  width: 140px;
-  height: 40px;
   background-color: #f9004d;
-  position: absolute;
-  top: 130px;
-  text-align: center;
-  line-height: 38px;
+  padding: 15px 40px;
+  border: 3px solid #f9004d;
   border-radius: 10px;
-  font-size: 15px;
-  border: 2px solid #f9004d;
-  cursor: pointer;
-  transition: 0.7s;
 }
 
 .github a:hover {
-  background-color: black;
+  background-color: #000;
 }
-@media screen and (max-width: 480px) {
-  .website h2 {
-    font-size: 45px;
+
+@media (min-width: 768px) {
+  .containerr {
+    width: 750px;
   }
 }
-@media (min-width: 481px) and (max-width: 1024px) {
-  .website {
-    height: 170vh;
+
+@media (min-width: 992px) {
+  .containerr {
+    width: 970px;
   }
 }
+@media (min-width: 1200px) {
+  .containerr {
+    width: 1170px;
+  }
+}
+
+@media (max-width: 767px) {
+  .website .containerr h2 {
+    font-size: 50px;
+  }
+}
+
 /* end website */
 /* start contact */
 .contact {
