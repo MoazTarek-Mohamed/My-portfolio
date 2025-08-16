@@ -32,6 +32,9 @@
             <a class="a_hover" href="#about">about me</a>
           </li>
           <li class="nav-item">
+            <a class="a_hover" href="#education">education</a>
+          </li>
+          <li class="nav-item">
             <a class="a_hover" href="#services">services</a>
           </li>
           <li class="nav-item">
@@ -44,7 +47,7 @@
             <a class="a_hover" href="#contact">contact us</a>
           </li>
           <li class="nav-item subscribe">
-            <a class="" href="#">subscribe</a>
+            <a class="" href="#contact">subscribe</a>
           </li>
         </ul>
       </div>
@@ -54,12 +57,12 @@
   <!-- start home -->
   <div id="Home" class="container Home">
     <div>
-      <h4>Hello , my name is</h4>
+      <h4>Hello, my name is</h4>
       <h1>Moaz <span>Tarek</span></h1>
-      <h3 class="software">I'm a software engineer</h3>
-      <form>
-        <input id="email" type="email" placeholder="   Enter your email" />
-        <input id="submit" type="submit" value="let's start" />
+      <h3 class="software">I'm a Node.js Developer</h3>
+      <form action="mailto:moaztarek.mosallam@gmail.com" method="post" enctype="text/plain">
+        <input id="email" name="input" type="text" placeholder="   Enter your email for contacting" required />
+        <input id="submit" type="submit" value="Let's Start" />
       </form>
     </div>
   </div>
@@ -68,56 +71,75 @@
     <img src="./windows-11-dark-mode-abstract-background-black-background-3840x2400-8710.jpg" alt="image" />
     <div>
       <h1>About Me</h1>
-      <h3>Software <span> Engineer</span></h3>
+      <h3>Node.js <span> developer</span></h3>
       <p>
-        I'm a software engineer that has good skills , i'm still in my second
-        year in future university in egypt studying computer science , I know
-        some technologies well , like
-        <span>Java , C++ , Java OOP , Html , Css </span> i'm also good in
-        problem solving and communication skills , I can provide a well
-        designed websites as well as responsive designes to fit the different
-        devices .
-      </p><a
-        href="https://drive.google.com/drive/folders/1zU9YMF3yPo-9e0ThOngfkJOlmLdBvJSh?usp=drive_link">Certificates</a>
+        I'm a Back-End Node.js Developer skilled in building efficient and scalable web applications using
+        <span>JavaScript, Express, and MongoDB.</span> With hands-on experience from academic and personal projects, I
+        have
+        strong problem-solving abilities and expertise in rapidly developing and deploying complete web applications
+        within
+        tight deadlines.
+      </p>
+      <a href="https://drive.google.com/drive/folders/1zU9YMF3yPo-9e0ThOngfkJOlmLdBvJSh?usp=drive_link">Certificates</a>
     </div>
   </section>
   <!-- end about -->
+  <!-- start education -->
+  <div id="education" class="container">
+    <h1>Education</h1>
+    <div class="education-content">
+      <div>
+        <p>2022-2026</p>
+        <p>Bachelor's Degree</p>
+      </div>
+      <div>
+        <p>Bachelor of Computer Science </p>
+        <br>
+        <div>
+          <p>Future University in Egypt</p>
+        </div>
+        <br>
+        <div>
+          <p>Department of Computer Science</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end education -->
   <!-- start services -->
-  <section id="services" class="services container">
-    <h1>Our Services</h1>
+  <section id="services" class="services">
+    <h1>Services</h1>
     <div class="services_content">
       <div>
-        <i class="fa-solid fa-bars"></i>
-        <h3>Web Development</h3>
+        <i class="fa-solid fa-code"></i>
+        <h3>API Development</h3>
         <p>
-          Every website should be built with two primary goals : Firstly , it
-          needs to work across all devices . Secondly , it needs to be as fast as
-          possible
+          Design and build secure, efficient, and scalable RESTful and GraphQL APIs using Node.js, Express, and
+          MongoDB
+          to
+          power modern web and mobile applications.
         </p>
-        <button>read more</button>
       </div>
       <div>
-        <i class="fa-solid fa-bug"></i>
-        <h3>Debugging</h3>
+        <i class="fa-solid fa-database"></i>
+        <h3>Database Design & Optimization</h3>
         <p>
-          Debugging ensures smooth functionality, preventing glitches,
-          and safeguarding user experience. It's the essential
-          process that catches errors before they impact visitors
+          Develop and optimize database structures with MongoDB and SQL to ensure fast queries, high availability, and
+          seamless data management for applications of any scale.
         </p>
-        <button>read more</button>
       </div>
       <div>
-        <i class="fa-regular fa-bell"></i>
-        <h3>Web Development</h3>
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Authentication & Security</h3>
         <p>
-          I prioritize prompt and responsive communication with all clients, ensuring timely updates and adherence to
-          agreed
-          deadlines.
+          Implement secure authentication and authorization using JWT, OAuth, and best security practices, ensuring
+          your
+          applications are protected against vulnerabilities and unauthorized access.
         </p>
-        <button>read more</button>
       </div>
     </div>
   </section>
+
   <!-- end services -->
   <!-- start skills -->
   <section id="skills" class=" container skills">
@@ -151,6 +173,10 @@
         <i class="fa-brands fa-bootstrap"></i>
         <p>bootstrap</p>
       </div>
+      <div>
+        <i class="fa-brands fa-js"></i>
+        <p>JavaScript</p>
+      </div>
     </div>
   </section>
   <!-- end skills -->
@@ -164,8 +190,8 @@
           <a target="_blank" href="https://mo3az-site14.netlify.app">Kasper</a>
         </div>
         <div>
-          <img src="./Screenshot 2024-01-23 031833.png" alt="website">
-          <a target="_blank" href="https://mo3az-site2.netlify.app">Travel</a>
+          <img src="moaz world.png" alt="website">
+          <a target="_blank" href="https://mo3az-site16.netlify.app/">Moaz world</a>
         </div>
         <div>
           <img src="Leon-photo.png" alt="website">
@@ -179,39 +205,84 @@
   </div>
   <!-- end websites -->
   <!-- start contact -->
+
   <section id="contact" class="contact container">
-    <h1>Contact Us </h1>
-    <form>
-      <div>
-        <label for="namee">Name</label>
-        <br>
-        <input id="namee" type="text" placeholder=" Enter your name">
+    <h1>Contact Me</h1>
+
+    <form id="contact-form" class="contact-form">
+      <div class="form-group">
+        <label for="namee">Name</label><br>
+        <input id="namee" name="name" type="text" placeholder="Enter your name" required>
       </div>
       <br>
-      <div>
-        <label for="emaill">Email</label>
-        <br>
-        <input id="emaill" type="email" placeholder=" Enter your email">
+
+      <div class="form-group">
+        <label for="emaill">Email</label><br>
+        <input id="emaill" type="email" name="email" placeholder="Enter your email" required>
       </div>
-      <div>
-        <div class="area">
-          <label>your message:</label>
-          <br>
-          <textarea cols="40" rows="15" placeholder=" enter your message"></textarea>
-          <textarea class="text_unvisible" cols="31" rows="12" placeholder=" enter your message"></textarea>
-        </div>
-        <input class="submit" type="submit">
+      <br>
+
+      <div class="form-group area">
+        <label>Your message:</label><br>
+        <textarea cols="40" rows="10" placeholder="Enter your message" name="message" required></textarea>
+      </div>
+      <button class="submit" type="submit">Send</button>
     </form>
-    <ul>
+
+    <ul class="contact-links">
       <li><a href="https://www.facebook.com/mezo.tarek.378"><i class="fa-brands fa-facebook"></i></a></li>
       <li><a href="https://www.linkedin.com/in/moaz-tarek-7605a12a2"><i class="fa-brands fa-linkedin"></i></a></li>
       <li><a href="tel:+201094791417"><i class="fa-solid fa-phone"></i></a></li>
-      <li><a href="mailto:mo3aztarek.13@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+      <li><a href="mailto:moaztarek.mosallam@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
       <li><a href="https://github.com/0Mo3az0?tab=repositories"><i class="fa-brands fa-github"></i></a></li>
     </ul>
   </section>
 
+
+  <div id="popup" style="
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:black;
+  padding:20px 30px;
+  border-radius:12px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.3);
+  text-align:center;
+  z-index:9999;
+  animation: fadeIn 0.3s ease;
+">
+    <p id="popup-message" style="font-size:14px; margin-bottom:15px;"></p>
+    <button onclick="closePopup()" style="
+    background:#007BFF;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+  ">OK</button>
+  </div>
+
+  <!-- Animation -->
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+      }
+
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+  </style>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
   <!-- end contact -->
+
   <!-- start footer -->
   <footer>
     <address>
@@ -224,6 +295,45 @@
   </footer>
   <!-- end footer -->
   <script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+
+    (function () {
+      emailjs.init("HSw-w54-wvhxFLwv7");
+    })();
+
+    const form = document.getElementById("contact-form");
+    const popup = document.getElementById("popup");
+    const popupMessage = document.getElementById("popup-message");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm("service_b8td7kj", "template_ueqfl1c", form)
+        .then(() => {
+          showPopup("✅ Message sent successfully!");
+          form.reset();
+        }, (err) => {
+          showPopup("❌ Failed to send message. Please try again.");
+          console.error("EmailJS Error:", err);
+        });
+    });
+
+    function showPopup(message) {
+      popupMessage.textContent = message;
+      popup.style.display = "block";
+    }
+
+    function closePopup() {
+      popup.style.display = "none";
+    }
+  </script>
+
+
+
 </body>
 
 </html>
