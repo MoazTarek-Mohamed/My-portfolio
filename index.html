@@ -15,7 +15,7 @@
   <!-- start navbar -->
   <header>
     <nav class=" navbar navbar-expand-lg navbar-light bg-black">
-      <p class="logo">Portfo<span>lio</span></p>
+      <p class="logo">Mo<span>az</span></p>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class=""></span>
@@ -46,8 +46,8 @@
           <li class="nav-item">
             <a class="a_hover" href="#contact">contact us</a>
           </li>
-          <li class="nav-item subscribe">
-            <a class="" href="#contact">subscribe</a>
+          <li class="nav-item">
+            <a class="subscribe" href="#contact">subscribe</a>
           </li>
         </ul>
       </div>
@@ -55,52 +55,63 @@
   </header>
   <!-- end navbar -->
   <!-- start home -->
-  <div id="Home" class="container Home">
-    <div>
+  <div id="Home" class="Home">
+    <div class="container">
       <h4>Hello, my name is</h4>
       <h1>Moaz <span>Tarek</span></h1>
       <h3 class="software">I'm a Node.js Developer</h3>
       <form action="mailto:moaztarek.mosallam@gmail.com" method="post" enctype="text/plain">
-        <input id="email" name="input" type="text" placeholder="   Enter your email for contacting" required />
-        <input id="submit" type="submit" value="Let's Start" />
+        <div class="email-container">
+          <input id="email" name="input" type="text" placeholder="   Enter your email for contacting" required />
+          <input id="submit" type="submit" value="Let's Start" />
+        </div>
       </form>
     </div>
   </div>
+
   <!-- start about -->
-  <section id="about" class="container about">
-    <img src="./windows-11-dark-mode-abstract-background-black-background-3840x2400-8710.jpg" alt="image" />
-    <div>
-      <h1>About Me</h1>
-      <h3>Node.js <span> developer</span></h3>
-      <p>
-        I'm a Back-End Node.js Developer skilled in building efficient and scalable web applications using
-        <span>JavaScript, Express, and MongoDB.</span> With hands-on experience from academic and personal projects, I
-        have
-        strong problem-solving abilities and expertise in rapidly developing and deploying complete web applications
-        within
-        tight deadlines.
-      </p>
-      <a href="https://drive.google.com/drive/folders/1zU9YMF3yPo-9e0ThOngfkJOlmLdBvJSh?usp=drive_link">Certificates</a>
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-image">
+        <img src="./windows-11-dark-mode-abstract-background-black-background-3840x2400-8710.jpg" alt="image" />
+      </div>
+      <div class="about-text">
+        <h1>About Me</h1>
+        <h3>Node.js <span> developer</span></h3>
+        <p>
+          I'm a Back-End Node.js Developer skilled in building efficient and scalable web applications using
+          <span>JavaScript, Express, and MongoDB.</span> With hands-on experience from academic and personal projects, I
+          have
+          strong problem-solving abilities and expertise in rapidly developing and deploying complete web applications
+          within
+          tight deadlines.
+        </p>
+        <a
+          href="https://drive.google.com/drive/folders/1zU9YMF3yPo-9e0ThOngfkJOlmLdBvJSh?usp=drive_link">Certificates</a>
+      </div>
     </div>
+
   </section>
   <!-- end about -->
   <!-- start education -->
-  <div id="education" class="container">
-    <h1>Education</h1>
-    <div class="education-content">
-      <div>
-        <p>2022-2026</p>
-        <p>Bachelor's Degree</p>
-      </div>
-      <div>
-        <p>Bachelor of Computer Science </p>
-        <br>
+  <div id="education" class="education">
+    <div class="container">
+      <h1>Education</h1>
+      <div class="education-content">
         <div>
-          <p>Future University in Egypt</p>
+          <p>2022-2026</p>
+          <p>Bachelor's Degree</p>
         </div>
-        <br>
         <div>
-          <p>Department of Computer Science</p>
+          <p>Bachelor of Computer Science </p>
+          <br>
+          <div>
+            <p>Future University in Egypt</p>
+          </div>
+          <br>
+          <div>
+            <p>Department of Computer Science</p>
+          </div>
         </div>
       </div>
     </div>
@@ -109,7 +120,7 @@
   <!-- start services -->
   <section id="services" class="services">
     <h1>Services</h1>
-    <div class="services_content">
+    <div class="container">
       <div>
         <i class="fa-solid fa-code"></i>
         <h3>API Development</h3>
@@ -138,6 +149,7 @@
         </p>
       </div>
     </div>
+
   </section>
 
   <!-- end services -->
